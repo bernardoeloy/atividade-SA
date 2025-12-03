@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Entrar — FlashFind</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">FlashFind</div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="cadastro.html" class="btn-outline">Criar conta</a>
+    </nav>
+  </header>
+
+  <main class="center">
+    <section class="card auth-card">
+      <h2>Entrar</h2>
+      <form id="loginForm" onsubmit="return onLogin(event)">
+        <label>
+          Email
+          <input id="loginEmail" type="email" required placeholder="seu@exemplo.com">
+        </label>
+        <label>
+          Senha
+          <input id="loginPassword" type="password" minlength="6" required placeholder="••••••••">
+        </label>
+
+        <div class="row-between">
+          <label class="small"><input type="checkbox" id="remember"> Lembrar-me</label>
+          <a href="#" class="small">Esqueceu a senha?</a>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="btn">Entrar</button>
+        </div>
+
+        <p class="small">Ainda não tem conta? <a href="cadastro.html">Criar conta</a></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>FlashFind</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

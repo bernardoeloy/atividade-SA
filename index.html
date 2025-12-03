@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FlashFind — Página inicial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">FlashFind</div>
+    <nav>
+      <a href="login.html">Entrar</a>
+      <a href="cadastro.html" class="btn-outline">Criar conta</a>
+    </nav>
+  </header>
+
+  <main class="center">
+    <h1 class="visually-hidden">Página inicial do FlashFind</h1>
+
+    <form id="searchForm" class="search-box" onsubmit="return buscarPokemon(event)">
+       <img src="logo-hd.png" alt="logo-hd" aria-hidden="true" class="logo">
+  <input id="q" name="q" type="search" placeholder="Pesquisar..." required>
+  <div class="actions">
+    <button type="submit" class="btn">Pesquisar</button>
+  </div>
+</form>
+
+<div id="resultadoPokemon"></div>
+
+
+    <p class="hint">FlashFind</p>
+  </main>
+
+  <footer class="footer">
+    <small>FlashFind• 2025</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
